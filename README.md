@@ -1,2 +1,2 @@
 # random-table-2026
-9 june 2026 
+A python package, generates random tables
