@@ -1,5 +1,15 @@
 import pandas as pd
-def load_table(filepath):
+#from pathlib import Path
+DEFAULT_TABLE = "../data/example-table.csv"
+
+
+
+def load_table(filepath=DEFAULT_TABLE):
     example_table=pd.read_csv(filepath)
     example_table.columns=example_table.columns.str.strip()
     return example_table
+
+def catagories(filepath=DEFAULT_TABLE): 
+    example_table=load_table(filepath)
+    return example_table.columns.to_list()
+    
